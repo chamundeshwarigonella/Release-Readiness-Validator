@@ -1,4 +1,8 @@
-"Passed": passed,
+def validate_test_totals(planned, passed, failed, blocked, not_run):
+    """Check that every planned test is accounted for."""
+    counts = {
+        "Planned": planned,
+        "Passed": passed,
         "Failed": failed,
         "Blocked": blocked,
         "Not Run": not_run,
